@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="kinectTest.exe" version="1.0.0.0" publicKeyToken="1c8c0ab7bdf8e880" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="kinectTest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="kinectTest.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Kinect" version="1.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Coding4Fun.Kinect.Wpf.dll" size="18944">
+      <assemblyIdentity name="Coding4Fun.Kinect.Wpf" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>2NujXTzKqtc+KjiOQ8m0+j42GBs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kinectTest.exe" size="15360">
+      <assemblyIdentity name="kinectTest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9tfMSe/GRPKdcqLXT/4Sbf7bRbc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Drawing.dll" size="122880">
+      <assemblyIdentity name="Microsoft.Expression.Drawing" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rUxD+M8zP3GKvtY6FZyDcUiy/Ng=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Samples.Kinect.WpfViewers.dll" size="64000">
+      <assemblyIdentity name="Microsoft.Samples.Kinect.WpfViewers" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EjyAbL22VdMHIdFGqTj9XxxWEDY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Fast\Kevin" issuerKeyHash="76caf469dfc458d0a8e7b176cae802afc1456fec" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>IEhSOblo7beSBBWD4KANipr1MUI=</DigestValue></Reference></SignedInfo><SignatureValue>NZBo04LpNCZH7c2WfHTZrYHJhgU41sSnH7gaYfXxaVSiCC553LWnVQipkGW4+/kqIuaEVnXyBj3mrquz37kbHZc8diSVqB26PrpQ+4YX4CcOHy8nR+VRgOIYT06O4/mCAvJoMydiPZyA9NsLkB8JHKj0mlpHOkfXZcPF//9M5rM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>h3ibpKzuWmYXqLjAeki8lDBbjZr+CBN0L92gc8cRpgp8aoOvFV4z9fNuWpa3wW0RVhGob+KuE8yLAdw8Q6MhnPdOt0yiflH8DJoG8sdRZtNbe90OCnksoWKedOdT+a25MsbggkbVmR2QORIGru19Scji9WOKFaCwy9fpfe7X3Rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4231f59a8a0da0e083150492b7ed68b939524820" Description="" Url=""><as:assemblyIdentity name="kinectTest.exe" version="1.0.0.0" publicKeyToken="1c8c0ab7bdf8e880" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Fast\Kevin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>yr+wtLJJ+gZzBMLBzU0iXym7VnQ=</DigestValue></Reference></SignedInfo><SignatureValue>F5/SHlC+P1mUh9IZAmlcRKjHRj96T9/reW9Xh2pw1VkB5O8/ffSzW4CDveFm9YgFIAGiud+CjWNqqujc49L6EREyppDaC2qPxc8HvVmmjfg6PAoZogd1uj276RiHHHkCCh7TEY+4kdaaCw1TOLmMqWXdhMjAFTUiBlCfoHEhoVI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>h3ibpKzuWmYXqLjAeki8lDBbjZr+CBN0L92gc8cRpgp8aoOvFV4z9fNuWpa3wW0RVhGob+KuE8yLAdw8Q6MhnPdOt0yiflH8DJoG8sdRZtNbe90OCnksoWKedOdT+a25MsbggkbVmR2QORIGru19Scji9WOKFaCwy9fpfe7X3Rk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQMeJKbb4ZsaROGBP6J56igDANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQARgBhAHMAdABcAEsAZQB2AGkAbjAeFw0xMjA4MTUxNTE1NDVaFw0xMzA4MTUyMTE1NDVaMB8xHTAbBgNVBAMeFABGAGEAcwB0AFwASwBlAHYAaQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCHeJukrO5aZheouMB6SLyUMFuNmv4IE3Qv3aBzxxGmCnxqg68VXjP1825alrfBbRFWEahv4q4TzIsB3DxDoyGc9063TKJ+UfwMmgbyx1Fm01t73Q4KeSyhYp5051P5rbkyxuCCRtWZHZA5Egau7X1JyOL1Y4oVoLDL1+l97tfdGQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAG0qbF4FgSMNR/6gYndFQ89d1aWokOsUrpoJjRWl6qdkXT4P+Bu/6It4NIsCrIE6dKAYF49zPT4MlWXgviae1C52i5XdOaQUsh74/4sTnLQu4/LwQjBGkuY5z82m447hdeI837bLQBPAwrgs4B6I0DV3Z9USonBowVx4GuhaJkzR</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
