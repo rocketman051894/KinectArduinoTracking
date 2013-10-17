@@ -1,4 +1,4 @@
 This project is to take a Microsoft Kinect and use it to send the Skeleton tracking data to an Arduino so it can control servos that will point an airsoft gun at the person being tracked. The data is being sent through a usb serial connection to the Arduino. My goal is to send the data through an ethernet cable (some code is already there but commited out). I would also like to eventually get a second set of servos for another airsoft gun. Everything is working as of right now with minor bugs to control one set of servos. Here is a Youtube video demonstrating how it works: http://www.youtube.com/watch?v=XhMMT7UvOz8. Just upload the Arduino code and use your favorate C# compiler to use it. I used Microsoft Visual Studio C# 2010 for this. Enjoy!
 
 Update:
-I would like to port this code to a Raspberry Pi. I would like to have the Pi run the servos as well as gather the data from the Microsoft Kinect. 
+I am attempting to port this code to a Raspberry Pi. I would like to have the Pi run the servos as well as gather the data from the Microsoft Kinect. 
